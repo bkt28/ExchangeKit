@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C69496C61F6D9A6F00ADCF3F /* ExchangeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69496BC1F6D9A6F00ADCF3F /* ExchangeKit.framework */; };
 		C69496D71F6D9F0E00ADCF3F /* ExchangeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69496D61F6D9F0E00ADCF3F /* ExchangeRequests.swift */; };
-		D74369A82DA24B4FACD95CF4 /* Pods_ExchangeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529A1A5728CF2EEE343806AE /* Pods_ExchangeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,13 +22,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		183F83FB37A71D8BD30722C3 /* Pods-ExchangeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeKit/Pods-ExchangeKit.release.xcconfig"; sourceTree = "<group>"; };
-		529A1A5728CF2EEE343806AE /* Pods_ExchangeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69496BC1F6D9A6F00ADCF3F /* ExchangeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExchangeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69496C01F6D9A6F00ADCF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69496C51F6D9A6F00ADCF3F /* ExchangeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69496D61F6D9F0E00ADCF3F /* ExchangeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRequests.swift; sourceTree = "<group>"; };
-		E8BB1D099EF753D15D37B6E4 /* Pods-ExchangeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeKit/Pods-ExchangeKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74369A82DA24B4FACD95CF4 /* Pods_ExchangeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,30 +47,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BF74B6B67E9AC07385E3F23 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				529A1A5728CF2EEE343806AE /* Pods_ExchangeKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		38085DA72AEE37C58CF302E3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E8BB1D099EF753D15D37B6E4 /* Pods-ExchangeKit.debug.xcconfig */,
-				183F83FB37A71D8BD30722C3 /* Pods-ExchangeKit.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		C69496B21F6D9A6F00ADCF3F = {
 			isa = PBXGroup;
 			children = (
 				C69496BE1F6D9A6F00ADCF3F /* ExchangeKit */,
 				C69496BD1F6D9A6F00ADCF3F /* Products */,
-				38085DA72AEE37C58CF302E3 /* Pods */,
-				1BF74B6B67E9AC07385E3F23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,12 +90,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C69496D01F6D9A6F00ADCF3F /* Build configuration list for PBXNativeTarget "ExchangeKit" */;
 			buildPhases = (
-				A787C8FEF5708A45A7FF6C21 /* [CP] Check Pods Manifest.lock */,
 				C69496B71F6D9A6F00ADCF3F /* Sources */,
 				C69496B81F6D9A6F00ADCF3F /* Frameworks */,
 				C69496B91F6D9A6F00ADCF3F /* Headers */,
 				C69496BA1F6D9A6F00ADCF3F /* Resources */,
-				A0FBB3D28B9E198F1B4F45A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,42 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A0FBB3D28B9E198F1B4F45A9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeKit/Pods-ExchangeKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A787C8FEF5708A45A7FF6C21 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ExchangeKit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C69496B71F6D9A6F00ADCF3F /* Sources */ = {
@@ -380,7 +318,6 @@
 		};
 		C69496D11F6D9A6F00ADCF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8BB1D099EF753D15D37B6E4 /* Pods-ExchangeKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -403,7 +340,6 @@
 		};
 		C69496D21F6D9A6F00ADCF3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 183F83FB37A71D8BD30722C3 /* Pods-ExchangeKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
