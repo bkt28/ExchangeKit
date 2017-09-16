@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C69496C61F6D9A6F00ADCF3F /* ExchangeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69496BC1F6D9A6F00ADCF3F /* ExchangeKit.framework */; };
-		C69496CD1F6D9A6F00ADCF3F /* ExchangeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C69496BF1F6D9A6F00ADCF3F /* ExchangeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C69496D71F6D9F0E00ADCF3F /* ExchangeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69496D61F6D9F0E00ADCF3F /* ExchangeRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +23,9 @@
 
 /* Begin PBXFileReference section */
 		C69496BC1F6D9A6F00ADCF3F /* ExchangeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExchangeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C69496BF1F6D9A6F00ADCF3F /* ExchangeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeKit.h; sourceTree = "<group>"; };
 		C69496C01F6D9A6F00ADCF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69496C51F6D9A6F00ADCF3F /* ExchangeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69496D61F6D9F0E00ADCF3F /* ExchangeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,8 @@
 		C69496BE1F6D9A6F00ADCF3F /* ExchangeKit */ = {
 			isa = PBXGroup;
 			children = (
-				C69496BF1F6D9A6F00ADCF3F /* ExchangeKit.h */,
 				C69496C01F6D9A6F00ADCF3F /* Info.plist */,
+				C69496D61F6D9F0E00ADCF3F /* ExchangeRequests.swift */,
 			);
 			path = ExchangeKit;
 			sourceTree = "<group>";
@@ -80,7 +80,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C69496CD1F6D9A6F00ADCF3F /* ExchangeKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +134,7 @@
 				TargetAttributes = {
 					C69496BB1F6D9A6F00ADCF3F = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					C69496C41F6D9A6F00ADCF3F = {
 						CreatedOnToolsVersion = 9.0;
@@ -181,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69496D71F6D9F0E00ADCF3F /* ExchangeRequests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +319,7 @@
 		C69496D11F6D9A6F00ADCF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3RZ647A33X;
@@ -330,6 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brendantaylor.ExchangeKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +341,7 @@
 		C69496D21F6D9A6F00ADCF3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3RZ647A33X;
@@ -358,6 +362,7 @@
 		C69496D41F6D9A6F00ADCF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3RZ647A33X;
 				INFOPLIST_FILE = ExchangeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,6 +376,7 @@
 		C69496D51F6D9A6F00ADCF3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3RZ647A33X;
 				INFOPLIST_FILE = ExchangeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
