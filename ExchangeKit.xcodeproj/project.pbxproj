@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C69496C61F6D9A6F00ADCF3F /* ExchangeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69496BC1F6D9A6F00ADCF3F /* ExchangeKit.framework */; };
-		C69496CB1F6D9A6F00ADCF3F /* ExchangeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69496CA1F6D9A6F00ADCF3F /* ExchangeKitTests.swift */; };
 		C69496CD1F6D9A6F00ADCF3F /* ExchangeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C69496BF1F6D9A6F00ADCF3F /* ExchangeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,8 +26,6 @@
 		C69496BF1F6D9A6F00ADCF3F /* ExchangeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeKit.h; sourceTree = "<group>"; };
 		C69496C01F6D9A6F00ADCF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69496C51F6D9A6F00ADCF3F /* ExchangeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C69496CA1F6D9A6F00ADCF3F /* ExchangeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeKitTests.swift; sourceTree = "<group>"; };
-		C69496CC1F6D9A6F00ADCF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				C69496BE1F6D9A6F00ADCF3F /* ExchangeKit */,
-				C69496C91F6D9A6F00ADCF3F /* ExchangeKitTests */,
 				C69496BD1F6D9A6F00ADCF3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,15 +71,6 @@
 				C69496C01F6D9A6F00ADCF3F /* Info.plist */,
 			);
 			path = ExchangeKit;
-			sourceTree = "<group>";
-		};
-		C69496C91F6D9A6F00ADCF3F /* ExchangeKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				C69496CA1F6D9A6F00ADCF3F /* ExchangeKitTests.swift */,
-				C69496CC1F6D9A6F00ADCF3F /* Info.plist */,
-			);
-			path = ExchangeKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C69496CB1F6D9A6F00ADCF3F /* ExchangeKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
