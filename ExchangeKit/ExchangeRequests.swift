@@ -24,20 +24,6 @@ struct ExchangeError {
     let errorMessage: String
 }
 
-protocol PriceUpdateDelegate: class {
-    
-    func didReceivePriceUpdate(productId: String, price: Double)
-    
-}
-
-protocol OrderUpdateDelegate: class {
-    
-    func didReceiveOrder(orderId: String, productId: String, type: String, side: String, price: Double, size: Double)
-    
-    func didCloseOrder(orderId: String, productId: String, side: String)
-    
-}
-
 class Exchange {
     
     static let shared: Exchange = Exchange()
