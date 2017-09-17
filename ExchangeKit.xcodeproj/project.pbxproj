@@ -161,8 +161,8 @@
 		C6C28D461F6DFAF5007DA655 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				C6C28D471F6DFB0F007DA655 /* PriceUpdateDelegate.swift */,
 				C6C28D491F6DFB38007DA655 /* OrderUpdateDelegate.swift */,
+				C6C28D471F6DFB0F007DA655 /* PriceUpdateDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
